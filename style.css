@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+JavaScript (script.js)
+javascript
+Copy code
+document.getElementById('dataForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    const material = document.getElementById('material').value;
+    const location = document.getElementById('location').value;
+    const energy = document.getElementById('energy').value;
+    const emission = document.getElementById('emission').value;
+
+    // Display result (this is where you'd send data to a server)
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `<p>Thank you for submitting data on ${material} in ${location}. Energy usage: ${energy} kWh, Emission: ${emission} CO2.</p>`;
+
+    // Here you could add code to send data to a backend server or API
+});
