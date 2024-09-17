@@ -4,7 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Building Materials</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- CSS goes here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,39 +64,3 @@
         </nav>
     </header>
 
-    <section id="data-collection">
-        <h2>Crowdsourced Data Collection</h2>
-        <form id="dataForm">
-            <label for="material">Building Material:</label>
-            <input type="text" id="material" name="material" required><br><br>
-
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required><br><br>
-
-            <label for="energy">Energy Usage (kWh):</label>
-            <input type="number" id="energy" name="energy" required><br><br>
-
-            <label for="emission">Emission (CO2):</label>
-            <input type="number" id="emission" name="emission" required><br><br>
-
-            <button type="submit">Submit Data</button>
-        </form>
-        <div id="result"></div>
-    </section>
-
-    <section id="awareness-campaigns">
-        <h2>Community Awareness Campaigns</h2>
-        <p>Learn about the importance of sustainable building materials and their impact on reducing carbon emissions.</p>
-        <div class="campaign">
-            <h3>What are Sustainable Building Materials?</h3>
-            <p>Sustainable building materials are those that have a low impact on the environment during production and help in reducing the carbon footprint of buildings.</p>
-        </div>
-        <div class="campaign">
-            <h3>How You Can Help</h3>
-            <p>Support local construction projects that use eco-friendly materials by staying informed and sharing knowledge with your community.</p>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
